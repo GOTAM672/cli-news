@@ -7,7 +7,8 @@ struct Articles{
 
 
 struct Article{
-    
+    title: String,
+    url: String
 }
 
 
