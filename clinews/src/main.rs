@@ -1,6 +1,6 @@
 use std::error::Error;
 use serde::Deserialize;
-use colour::{dark_green, yellow}
+use colour::{dark_green, dark_cyan};
 
 #[derive(Deserialize, Debug)]
 
@@ -18,28 +18,28 @@ struct Article{
 }
 
 
-fn get_articles(url: &str) -> Result<Articles, Box<dyn Error>>{
+fn get_articles(url: &str) -> Result<Articles, Box<dyn Error>> {
     
     let response = ureq::get(url).call()?.into_string()?;
     let articles: Articles = serde_json::from_str(&response)?;
 
-    Ok(articles);
+    Ok(articles)
 
 }
 
 fn render_articles(articles: &Articles){
     
-    for i: &Articles in &articles.articles{
+    for i in &articles.articles{
     
-         dark_green();
-         yellow();
+         dark_green!("> {}\n", i.title);
+         dark_cyan!("- {}\n\n", i.url);
     
     }
 
 }
 
 
-fn main() -> Result<(), Box<dyn Error> {
+fn main() -> Result<(), Box<dyn Error>> {
 
     // contains top headlines end point as a string
     let url: &str = "https://newsapi.org/v2/top-headlines?country=in&apiKey=81ad1c2efc7049d8882727ee26749dc1";
