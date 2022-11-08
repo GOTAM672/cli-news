@@ -1,6 +1,6 @@
 use std::error::Error;
 use serde::Deserialize;
-use colour::{dark_green, dark_cyan};
+use colour::{dark_green, dark_magenta};
 
 #[derive(Deserialize, Debug)]
 
@@ -31,8 +31,8 @@ fn render_articles(articles: &Articles){
 
     for i in &articles.articles{
 
-         dark_green!("> {}\n", i.title);
-         dark_cyan!("- {}\n\n", i.url);
+         dark_magenta!("> {}\n", i.title);
+         dark_green!("- {}\n\n", i.url);
 
     }
 
