@@ -3,7 +3,7 @@
 It is Command Line Interface tools, which is use to read top headlines of a listed country. <br> 
 You can read the top headlines by just executing one simple command.
 
-## WHat I Learned
+## What I Learned
 
 1. Rust Programming.
 2. 
