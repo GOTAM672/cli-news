@@ -19,3 +19,5 @@ cd clie-news
 cd India
 cargo run
 ```
+
+## Screenshot
