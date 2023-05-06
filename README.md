@@ -3,12 +3,10 @@
 It is Command Line Interface tools, which is use to read top headlines of a listed country. <br> 
 You can read the top headlines by just executing one simple command.
 
-## What I Learned
+## Technology Used
 
-1. Rust Programming.
-2. 
-
-### Dependencies
-Following should be installed and added to path before Install and Run the Project
-
-1. Rust Programming Language
+- Rust Programming.
+- [News API](https://newsapi.org/) - To fetch news articles.
+- [ureq-Rust Crate](https://docs.rs/ureq/latest/ureq/) - To make API request.
+- [serde_jason Crate](https://docs.rs/serde_json/latest/serde_json/) - To parse API responce.
+- [Colour Crate](https://docs.rs/colored/latest/colored/)
