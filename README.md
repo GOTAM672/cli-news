@@ -21,3 +21,4 @@ cargo run
 ```
 
 ## Screenshot
+![](./Screenshot.png)
