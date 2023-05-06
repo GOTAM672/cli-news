@@ -10,3 +10,12 @@ You can read the top headlines by just executing one simple command.
 - [ureq-Rust Crate](https://docs.rs/ureq/latest/ureq/) - To make API request.
 - [serde_jason Crate](https://docs.rs/serde_json/latest/serde_json/) - To parse API responce.
 - [Colour Crate](https://docs.rs/colored/latest/colored/)
+
+## How to run project
+```
+git clone https://github.com/GOTAM672/cli-news.git
+cd clie-news
+# get inside listed country folder
+cd India
+cargo run
+```
